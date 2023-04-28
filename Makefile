@@ -22,11 +22,11 @@ test:  ## Execute all tests.
 	@.venv/bin/pytest tests
 
 lint:  ## Execute a lint to code quality.
-	# @.venv/bin/mypy --ignore-missing-imports dundie
+	# @.venv/bin/mypy --ignore-missing-imports cli_gpt
 	@.venv/bin/pflake8
 
 fmt:  ## Format our imports with isort
-	@.venv/bin/isort -m 3 dundie tests
+	@.venv/bin/isort -m 3 cli_gpt tests
 
 clean:  ## Clean unused files.
 	@find ./ -name '*.pyc' -exec rm -f {} \;
