@@ -1,0 +1,5 @@
+# Copy this file to .secrets.toml
+# And include the resultant file to .gitignore
+
+[default]
+OPENAI_API_KEY='Put Here Your OpenAI API Key'

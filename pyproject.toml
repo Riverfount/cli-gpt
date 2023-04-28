@@ -1,0 +1,19 @@
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-s -ra -q -vv --forked"
+testpaths = [
+    "tests",
+    "integration",
+]
+
+[tool.flake8]
+exclude = ['.venv', 'build', 'migrations']
+max-line-length = 120
+
+[tool.isort]
+src_paths = ['dundie', 'tests', 'integration']
+multi_line_output = 3
+line_length = 120
+force_grid_wrap = 0
+use_parentheses = true
+include_trailing_comma = true

@@ -1,0 +1,22 @@
+# Dev Dependencies
+ipython
+ipdb
+pudb
+
+# Code Quality
+flake8==4.0.1
+pyproject-flake8
+isort
+
+# Docs
+# mkdocs
+
+# Build Dependencies
+wheel
+
+# Typing Dependencies
+mypy
+types-setuptools
+
+# Install project as editable
+-e .

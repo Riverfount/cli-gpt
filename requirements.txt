@@ -1,0 +1,6 @@
+click
+dynaconf
+openai
+requests
+rich
+rich-click
