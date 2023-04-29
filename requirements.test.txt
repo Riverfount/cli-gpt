@@ -1,2 +1,7 @@
 # Test Dependencies
 pytest
+
+# Code Quality
+flake8
+pyproject-flake8
+isort
