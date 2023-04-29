@@ -1,5 +1,10 @@
 # A ChatGPT CLI Project 
 
+[![CI](https://github.com/Riverfount/cli-gpt/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/Riverfount/cli-gpt/actions/workflows/main.yml)
+![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/Riverfount/cli-gpt?style=flat-square)
+![GitHub issues](https://img.shields.io/github/issues/Riverfount/cli-gpt)
+![GitHub](https://img.shields.io/github/license/Riverfount/cli-gpt?style=flat-square)
+![GitHub top language](https://img.shields.io/github/languages/top/Riverfount/cli-gpt?style=flat-square)
 
 The project's main goal is the creation of a CLI - Command Line Interface to allow Terminal users to interact with the 
 chatGPT API.
