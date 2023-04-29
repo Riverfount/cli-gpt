@@ -16,9 +16,11 @@ def main():
 
 @main.command()
 @click.argument('prompt')
-@click.option('-n', type=int, default=1, help='Inform the number of distinct responses you want.')
+@click.option('-n', type=int, default=1, help='Inform the number of distinct responses you want, the default is 1.')
 def call(prompt, n):
-    """Make a question to chatGPT
+    """Make a question to chatGPT.
+
+    The PROMPT is the question that you desire do to chatGPT.
     """
     responses = my_chat.call_gpt(prompt, n=n)
     for i in range(n):
