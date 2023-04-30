@@ -8,13 +8,13 @@ my_chat = MyChatGPT(settings.OPENAI_API_KEY)
 
 @click.group()
 @click.version_option(pkg_resources.get_distribution('cli-gpt').version)
-def main():
+def gpt():
     """CLI from chatGPT
     This command line interface provides a pleasant terminal-based experience for ChatGPT.
     """
 
 
-@main.command()
+@gpt.command()
 @click.argument('prompt')
 @click.option('-n', type=int, default=1, help='Inform the number of distinct responses you want, the default is 1.')
 def call(prompt, n):

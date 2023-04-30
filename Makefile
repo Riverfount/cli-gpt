@@ -29,10 +29,10 @@ fmt:  ## Format our imports with isort
 	@.venv/bin/isort -m 3 cli_gpt tests
 
 clean:  ## Clean unused files.
-	@find ./ -name '*.pyc' -exec rm -f {} \;
-	@find ./ -name '__pycache__' -exec rm -rf {} \;
-	@find ./ -name 'Thumbs.db' -exec rm -f {} \;
-	@find ./ -name '*~' -exec rm -f {} \;
+	@find -name '*.pyc' -exec rm -f {} \;
+	@find -name '__pycache__' -exec rm -rf {} \;
+	@find -name 'Thumbs.db' -exec rm -f {} \;
+	@find -name '*~' -exec rm -f {} \;
 	@rm -rf .cache
 	@rm -rf .pytest_cache
 	@rm -rf .mypy_cache

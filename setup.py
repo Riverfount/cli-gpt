@@ -39,7 +39,7 @@ setup(
     include_package_data=True,
     entry_points={
         'console_scripts': [
-            'gpt = cli_gpt.__main__:main'
+            'gpt = cli_gpt.__main__:gpt'
         ]
     },
     install_requires=read_requirements('requirements.txt'),
