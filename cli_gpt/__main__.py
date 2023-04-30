@@ -1,4 +1,4 @@
-from cli_gpt.cli import main
+from cli_gpt.cli import gpt
 
 if __name__ == '__main__':
-    main()
+    gpt()
