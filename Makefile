@@ -19,7 +19,7 @@ ipython:  ## Starts ipython.
 
 
 test:  ## Execute all tests.
-	@.venv/bin/pytest tests
+	@.venv/bin/pytest --cov='.' tests
 
 lint:  ## Execute a lint to code quality.
 	# @.venv/bin/mypy --ignore-missing-imports cli_gpt

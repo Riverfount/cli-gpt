@@ -5,3 +5,7 @@ pytest
 flake8
 pyproject-flake8
 isort
+
+# Test Coverage
+codecov
+pytest-cov
