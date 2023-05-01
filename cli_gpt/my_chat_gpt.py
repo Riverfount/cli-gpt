@@ -27,4 +27,4 @@ class MyChatGPT:
             temperature=self.temperature,
             max_tokens=self.max_tokens
         )
-        return [responses.choices[i].text for i in range(n)]
+        return [responses.choices[index].text for index in range(n)]

@@ -1,5 +1,6 @@
 import click
 import pkg_resources
+
 from cli_gpt.config import settings
 from cli_gpt.my_chat_gpt import MyChatGPT
 
@@ -23,5 +24,5 @@ def call(prompt, n):
     The PROMPT is the question that you desire do to chatGPT.
     """
     responses = my_chat.call_gpt(prompt, n=n)
-    for i in range(n):
-        click.echo(responses[i])
+    for index in range(n):
+        click.echo(responses[index])

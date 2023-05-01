@@ -1,7 +1,8 @@
 from unittest.mock import patch
 
-from cli_gpt.cli import gpt
 from click.testing import CliRunner
+
+from cli_gpt.cli import gpt
 
 
 @patch('cli_gpt.cli.my_chat.call_gpt')
