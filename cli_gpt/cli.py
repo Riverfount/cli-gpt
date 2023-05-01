@@ -3,8 +3,10 @@ import pkg_resources
 
 from cli_gpt.config import settings
 from cli_gpt.my_chat_gpt import MyChatGPT
+from cli_gpt.loader import Loader
 
 my_chat = MyChatGPT(settings.OPENAI_API_KEY)
+loader = Loader()
 
 
 @click.group()
@@ -23,6 +25,8 @@ def call(prompt, n):
 
     The PROMPT is the question that you desire do to chatGPT.
     """
+    loader.start()
     responses = my_chat.call_gpt(prompt, n=n)
+    loader.stop()
     for index in range(n):
-        click.echo(responses[index])
+        click.echo(f'{responses[index].strip()}\n')

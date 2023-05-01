@@ -9,7 +9,7 @@ help: ## This help.
 .DEFAULT_GOAL := help
 
 install:  ## Install in development mode.
-	@.venv/bin/python -m pip install -e .[test,dev]
+	@.venv/bin/python -m pip install -U -e .[test,dev]
 
 venv:  ## Create a virtualenv if it doesn't exists.
 	python -m venv .venv
